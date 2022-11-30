@@ -1,0 +1,44 @@
+body{
+
+    background: linear-gradient(
+        45deg,
+        red, blue, green, deeppink,
+        red, blue, green, deeppink
+    );
+    background-size: 400% 400%;
+    position: relative;
+    animation: move 20s ease infinite;
+}
+
+.container{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 170px;
+    margin-left: 600px;
+    border: 2px solid gold;
+    width: 25%;
+    height: 300px;
+    padding: 16px 32px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+h1{
+    font-size: 50px;
+    margin-left: 65px;
+    margin-top: 10%;
+    color: white;
+}
+
+h5{
+    font-size: 25px;
+    margin-left: 150px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+@keyframes move{
+    0%{ background-position: 0 50%;}
+    50%{ background-position: 100% 50%;}
+    100%{ background-position: 0 50%;}
+}
